@@ -1,0 +1,39 @@
+{
+  "name": "simple-react-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "webpack-dev-server --mode development",
+    "format": "prettier --trailing-comma es5 --single-quote --write 'packages/*/*.js' 'packages/*/!(node_modules)/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saulirajala/simple-react-starter.git"
+  },
+  "keywords": [],
+  "author": "Sauli Rajala",
+  "bugs": {
+    "url": "https://github.com/saulirajala/simple-react-starter/issues"
+  },
+  "homepage": "https://github.com/saulirajala/simple-react-starter#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "and": "0.0.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-hot-loader": "^4.3.11"
+  }
+}
