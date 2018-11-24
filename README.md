@@ -31,13 +31,32 @@ So why we need Babel? Because without it most of ES6/JSX syntax won't work. This
 Webpack is module bundler. See this [good introduction to Webpack by Juho Vepsäläinen](https://survivejs.com/webpack/what-is-webpack/).
 
 At minimum Webpack needs input and output ie. some files to process and some files where to output the code.
-* entries (input)
-* output
-* loaders ??
-* plugins ??
-* resolve ??
 
-Installed Webpack packages:
+
+### Entries
+What is the input for webpack?
+
+### Output
+Where to output the results? Where to put our bundled code?
+
+### Loaders
+What should happen between the input and output?
+
+Loaders will be the ones to preprocess files. For example `babel-loader` will do the magic of transforming ES6=>ES5. You can target other filetypes also, like `.jsx` or `.scss`.
+
+In webpack config file loaders are specified with `module.rules`
+Loaders are activated by using loadername! prefixes in require() statements, or are automatically applied via regex from your webpack configuration – see configuration.
+
+### Plugins
+https://webpack.js.org/concepts/plugins/
+Webpack itself is built on this plugin system and adding more plugins will modify how Webpack will behave. Plugins are used when loaders are not enough.
+
+Main differences between loaders and plugins:
+- loaders operate at file level, plugins operate at system level
+- loaders are executed at the start of build process, plugins are executed at the end of build process
+
+
+### Installed Webpack packages:
 * webpack: the actual bundler
 * webpack-cli: is this really necessary????
 * webpack-dev-server: development server for webpack
@@ -48,3 +67,6 @@ Installed Webpack packages:
 ## SCSS
 Because writing CSS is not the way to live your life.
 * maybe add styled components or something like that
+
+# References
+- https://css-tricks.com/introduction-webpack-entry-output-loaders-plugins/
