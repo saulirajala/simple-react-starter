@@ -60,13 +60,19 @@ Main differences between loaders and plugins:
 * webpack: the actual bundler
 * webpack-cli: is this really necessary????
 * webpack-dev-server: development server for webpack
-* babel-loader
+* babel-loader: load js/jsx and transform it to regular js (ES5)
 * style-loader????
 * css-loader????
+
+Note: webpack-dev-server serves the bundled files from memory — once the server stops, files are gone. That is why you should use `npm run build`, to generate bundle files.
 
 ## SCSS
 Because writing CSS is not the way to live your life.
 * maybe add styled components or something like that
+
+# TODOS:
+- some loaders for styles (scss or something)
+- some loaders for images (file-loader and stuffs)
 
 # References
 - https://css-tricks.com/introduction-webpack-entry-output-loaders-plugins/
